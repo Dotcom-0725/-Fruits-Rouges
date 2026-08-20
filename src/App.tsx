@@ -181,7 +181,6 @@ const SERVICES = [
   { fr: "Petit-déjeuner", ar: "الفطور" },
   { fr: "Déjeuner", ar: "الغداء" },
   { fr: "Café", ar: "قهوة" },
-  { fr: "Halal", ar: "حلال" },
   { fr: "Options végétariennes", ar: "خيارات نباتية" },
   { fr: "Idéal familles", ar: "مناسب للعائلات" },
   { fr: "Paiement par carte", ar: "الدفع بالبطاقة" },

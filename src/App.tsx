@@ -302,8 +302,8 @@ const Header = () => {
     <>
       <header className={`fixed top-0 inset-x-0 z-50 transition-all duration-500 ${scrolled ? "bg-[#FAF6EF]/95 backdrop-blur-md shadow-[0_1px_0_rgba(36,26,29,0.08),0_10px_30px_-18px_rgba(36,26,29,0.25)]" : "bg-transparent"}`}>
         <div className="max-w-7xl mx-auto px-5 sm:px-8 flex items-center justify-between h-16 sm:h-20">
-          <a href="#accueil" className={`font-display text-lg sm:text-xl font-semibold tracking-tight transition-colors ${scrolled ? "text-[#241A1D]" : "text-[#FAF6EF]"}`} aria-label="Fruits Rouges ahlan">
-            Fruits Rouges <span className="italic text-[#C6405A]">ahlan</span>
+          <a href="#accueil" className="flex items-center" aria-label="Fruits Rouges ahlan">
+            <img src="/logo.png" alt="Fruits Rouges ahlan" className={`h-11 sm:h-14 w-auto rounded-lg bg-white p-1 shadow-sm transition-all duration-500 ${scrolled ? "" : "shadow-md"}`} />
           </a>
 
           <nav className="hidden lg:flex items-center gap-8" aria-label="Navigation">
@@ -332,7 +332,7 @@ const Header = () => {
         {open && (
           <motion.div className="fixed inset-0 z-[60] bg-[#241A1D] flex flex-col" initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} transition={{ duration: 0.35 }}>
             <div className="flex items-center justify-between px-5 h-16">
-              <span className="font-display text-lg font-semibold text-[#FAF6EF]">Fruits Rouges <span className="italic text-[#C6405A]">ahlan</span></span>
+              <img src="/logo.png" alt="Fruits Rouges ahlan" className="h-11 w-auto rounded-lg bg-white p-1" />
               <div className="flex items-center gap-2">
                 <LangToggle className="border border-white/20 text-[#FAF6EF]" />
                 <button onClick={() => setOpen(false)} aria-label={t({ fr: "Fermer le menu", ar: "إغلاق القائمة" })} className="p-2 text-[#FAF6EF]"><IconX className="w-6 h-6" /></button>
